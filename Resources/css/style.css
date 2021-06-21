@@ -1,0 +1,197 @@
+/* *******************************************/
+/* ************** DEFAULT SETUP **************/
+/* *******************************************/
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Lato', sans-serif;  
+    /* font-family: 'Raleway', sans-serif; */
+    font-size: 20px;
+    /* default => font-size : 16px; */
+    color: #5a5a5a;
+    background-color: #e6e9f0;
+    text-rendering: optimizeLegibility;
+}
+body{
+    overflow-x: hidden;
+}
+.fab{
+    margin-right: 5px;
+}
+
+/* *******************************************/
+/* ************** CLEARFIX *******************/
+/* *******************************************/
+.clearfix::after{
+    content: " ";
+    display: table;
+    clear: both;
+}
+
+/* *******************************************/
+/* ************** REUSEABLE ******************/
+/* *******************************************/
+.sticky {
+    position: fixed !important;
+    top: 0 !important;
+    width: 100% !important;
+    z-index: 2000;
+}
+.bg-bluet
+{
+    background-color: #353232;
+}
+h2{
+    color:#051748;
+    /* color: #e67e22; */
+    font-size: 180%;
+    font-weight: 600;
+    text-align: center;
+    padding-top: 30px;
+    margin-top: 0px !important;
+    margin-bottom: 30px !important;
+    text-transform: uppercase;
+}
+
+/* h2::after{
+    content: " ";
+    display: block;
+    width: 150px;
+    height: 3px;
+    background-color: rgba(5, 23, 72, 0.4);
+    margin:  0 auto;
+    margin-top: 5px;
+} */
+.no-mlr
+{
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+/* *******************************************/
+/* ************** HEADER *********************/
+/* *******************************************/
+.load{
+    animation: slide 2s;
+}
+header
+{
+    /* background-image: linear-gradient(45deg,rgba(83, 95, 128,0.7) 55%,rgba(8, 31, 98,0.75)); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    min-height: 100vh;
+    height: -moz-available;          /* WebKit-based browsers will ignore this. */
+    height: -webkit-fill-available;  /* Mozilla-based browsers will ignore this. */
+    height: fill-available;
+    background-attachment: fixed;
+    animation: slide 40s infinite;
+}
+
+@keyframes slide{
+    0%{
+        background-image: linear-gradient(45deg,rgba(113, 121, 145, 0.7) 55%,rgba(8, 31, 98,0.75)) ,url(https://storage.googleapis.com/cdn.nhanh.vn/store/16762/bn/4.jpg);
+    }
+    20%{
+        background-image: linear-gradient(45deg,rgba(113, 121, 145, 0.7) 55%,rgba(8, 31, 98,0.75)) ,url(https://storage.googleapis.com/cdn.nhanh.vn/store/16762/bn/4.jpg);
+    }
+    20.01%{
+        background-image: linear-gradient(45deg,rgba(113, 121, 145, 0.7) 55%,rgba(8, 31, 98,0.75)) ,url(https://storage.googleapis.com/cdn.nhanh.vn/store/16762/bn/b54484df808475da2c95.jpg);
+    }
+    40%{
+        background-image: linear-gradient(45deg,rgba(113, 121, 145, 0.7) 55%,rgba(8, 31, 98,0.75)) ,url(https://storage.googleapis.com/cdn.nhanh.vn/store/16762/bn/b54484df808475da2c95.jpg);
+    }
+    40.01%{
+        background-image: linear-gradient(45deg,rgba(113, 121, 145, 0.7) 55%,rgba(8, 31, 98,0.75)) ,url(https://storage.googleapis.com/cdn.nhanh.vn/store/16762/bn/1.jpg);
+    }
+    60%{
+        background-image: linear-gradient(45deg,rgba(113, 121, 145, 0.7) 55%,rgba(8, 31, 98,0.75)) ,url(https://storage.googleapis.com/cdn.nhanh.vn/store/16762/bn/1.jpg);
+    }
+    60.01%{
+        background-image: linear-gradient(45deg,rgba(113, 121, 145, 0.7) 55%,rgba(8, 31, 98,0.75)) ,url(https://storage.googleapis.com/cdn.nhanh.vn/store/16762/bn/2.jpg);
+    }
+    80%{
+        background-image: linear-gradient(45deg,rgba(113, 121, 145, 0.7) 55%,rgba(8, 31, 98,0.75)) ,url(https://storage.googleapis.com/cdn.nhanh.vn/store/16762/bn/2.jpg);
+    }   
+    80.01%{
+        background-image: linear-gradient(45deg,rgba(113, 121, 145, 0.7) 55%,rgba(8, 31, 98,0.75)) ,url(https://storage.googleapis.com/cdn.nhanh.vn/store/16762/bn/4f92cf20aa975fc90686.jpg);
+    }
+    100%{
+        background-image: linear-gradient(45deg,rgba(113, 121, 145, 0.7) 55%,rgba(8, 31, 98,0.75)) ,url(https://storage.googleapis.com/cdn.nhanh.vn/store/16762/bn/4f92cf20aa975fc90686.jpg);
+    }
+}
+.content{
+    height: 100%;
+    width: 100%;
+}
+
+.nav-link
+{
+    color: white !important;
+    border-bottom: 2px solid transparent;
+    border-left: 2px solid white;
+    padding-left: 7px !important;
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+    transition: all .25s;
+    font-weight: 600;
+    font-size: 25px;
+    margin-top: 10px;
+    z-index: 2000;
+}
+.dropdown-menu{
+    background-color: #353232;
+}
+
+.dropdown-menu li{
+    text-align: center;
+}
+.logo
+{
+    margin-left: 0%;
+    height: 75px;
+}
+.heading-main-box
+{
+    position: absolute;
+    text-transform: uppercase;
+    font-family: 'Lato',sans-serif;
+    color: white;
+    transition: all .5s
+}
+.heading-main-box h1
+{
+    transition: all .5s
+}
+.header-groupAction a{
+    text-decoration: none;
+    color: white
+}
+
+.header-groupAction i{
+    margin: 10px;
+}
+
+/* ***********************************************/
+/* ************** Categories *********************/
+/* ***********************************************/
+
+
+
+
+/* ************************************************/
+/* ************** New Product *********************/
+/* ************************************************/
+.new-product{
+    background-color: #5a5a5a;
+}
+
+
+
+/* *******************************************/
+/* ************** Footer *********************/
+/* *******************************************/
