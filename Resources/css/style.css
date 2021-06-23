@@ -180,6 +180,89 @@ header
 /* ************** Categories *********************/
 /* ***********************************************/
 
+#aa-promo {
+    float: left;
+    display: inline;
+    width: 100%;
+  }
+  #aa-promo .aa-promo-area {
+    display: inline;
+    float: left;
+    padding: 30px 0;
+    width: 100%;
+  }
+  #aa-promo .aa-promo-area .aa-promo-left {
+    display: inline;
+    float: left;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+  }
+  #aa-promo .aa-promo-area .aa-promo-left .aa-prom-content {
+    top: 40% !important;
+  }
+  #aa-promo .aa-promo-area .aa-promo-middle {
+    display: inline;
+    float: left;
+    width: 100%;
+    height: 400px;
+    background-color: #ddd;
+  }
+  #aa-promo .aa-promo-area .aa-promo-right {
+    display: inline;
+    float: left;
+    width: 100%;
+    height: 400px;
+  }
+  #aa-promo .aa-promo-area .aa-promo-right .aa-single-promo-right {
+    width: 50%;
+    height: 50%;
+    float: left;
+  }
+  #aa-promo .aa-promo-area .aa-promo-banner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+   
+    transform: translateZ(0);
+  }
+ 
+  #aa-promo .aa-promo-area .aa-promo-banner:hover img {
+    height: 120%;
+    width: 120%;
+    margin-left: -10%;
+    margin-top: -10%;
+  }
+  
+  #aa-promo .aa-promo-area .aa-promo-banner img {
+    width: 100%;
+    height: 100%;
+    
+  }
+  #aa-promo .aa-promo-area .aa-promo-banner .aa-prom-content {
+    position: absolute;
+    left: 0;
+    top: 35%;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 99;
+  }
+  
+  #aa-promo .aa-promo-area .aa-promo-banner .aa-prom-content h4 a {
+    color: #fff !important;
+   
+  }
+  /* banner */
+#aa-banner {
+    display: flex;
+    float: left;
+    width: 100%;
+    
+    vertical-align: middle;
+   
+  }
 
 
 
@@ -195,3 +278,170 @@ header
 /* *******************************************/
 /* ************** Footer *********************/
 /* *******************************************/
+
+
+#aa-footer {
+  background-color: #222;
+  display:inline;
+  float: left;
+  width: 100%;
+}
+#aa-footer .aa-footer-top {
+  display: inline;
+  float: left;
+  padding: 50px 0;
+  width: 100%;
+  min-height: 100px;
+}
+#aa-footer .aa-footer-top .aa-footer-top-area {
+  display: inline;
+  float: left;
+  width: 100%;
+}
+#aa-footer .aa-footer-top .aa-footer-top-area .aa-footer-widget {
+  display: block;
+}
+#aa-footer .aa-footer-top .aa-footer-top-area .aa-footer-widget h3 {
+  color: #fff;
+}
+#aa-footer .aa-footer-top .aa-footer-top-area .aa-footer-widget .aa-footer-nav li a {
+  color: #888;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+#aa-footer .aa-footer-top .aa-footer-top-area .aa-footer-widget .aa-footer-nav li a:hover, #aa-footer .aa-footer-top .aa-footer-top-area .aa-footer-widget .aa-footer-nav li a:focus {
+  color: #fff;
+}
+#aa-footer .aa-footer-top .aa-footer-top-area .aa-footer-widget address p {
+  margin-bottom: 5px;
+  color: #888;
+}
+/* #aa-footer .aa-footer-top .aa-footer-top-area .aa-footer-widget address p span {
+  margin-right: 5px;
+} */
+#aa-footer .aa-footer-top .aa-footer-top-area .aa-footer-widget .aa-footer-social a {
+  border: 1px solid #888;
+  color: #888;
+  display: inline-block;
+  font-size: 18px;
+  margin-right: 8px;
+  padding: 2px 0;
+  text-align: center;
+  width: 35px;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+/* #aa-footer .aa-footer-top .aa-footer-top-area .aa-footer-widget .aa-footer-social a:hover {
+  color: #fff;
+  border-color: #fff;
+} */
+.aa-footer-nav{
+ 
+  font-size: 14px;
+}
+.aa-footer-widget{
+  font-size: 11px;
+}
+
+/* acount page */
+#aa-myaccount {
+  
+  display: inline;
+  float: left;
+  width: 100%;
+}
+#aa-myaccount .aa-myaccount-area {
+  display: inline;
+  float: left;
+  padding: 100px 0;
+  width: 100%;
+}
+#aa-myaccount .aa-myaccount-area h4 {
+  border-bottom: 1px solid #ccc;
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+}
+#aa-myaccount .aa-myaccount-area .aa-myaccount-login {
+  display: inline;
+  float: left;
+  width: 100%;
+}
+#aa-myaccount .aa-myaccount-area .aa-myaccount-register {
+  display: inline;
+  float: left;
+  width: 100%;
+}
+
+/*---- Login form ----*/
+
+.aa-login-form input[type="text"],
+.aa-login-form input[type="password"] {
+  border: 1px solid #ccc;
+  font-size: 16px;
+  height: 40px;
+  margin-bottom: 15px;
+  padding: 10px;
+  width: 100%;
+}
+.aa-login-form label {
+  font-weight: normal;
+  margin-top: 8px;
+}
+.aa-login-form label span {
+  color: red;
+}
+.aa-login-form .rememberme {
+  cursor: pointer;
+  margin-top: 18px;
+}
+.aa-login-form input[type="checkbox"] {
+  margin-top: 5px;
+}
+.aa-login-form button {
+  font-size: 14px;
+  padding: 8px 20px;
+  margin-right: 5px;
+  margin-top: 10px;
+  float: left;
+}
+.aa-login-form .aa-lost-password {
+  color: #555;
+  margin-top: 10px;
+  width: 100%;
+}
+.aa-login-form .aa-lost-password a {
+  color: #555;
+}
+
+/*---- LOGIN MODAL ----*/
+
+#login-modal .modal-content {
+  border-radius: 0;
+}
+#login-modal .modal-dialog {
+  margin: 100px auto;
+  width: 320px;
+}
+#login-modal .modal-dialog h4 {
+  border-bottom: 1px solid #ccc;
+  color: #666;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+#login-modal .modal-dialog .aa-register-now {
+  border-top: 1px solid #ccc;
+  margin-top: 20px;
+  font-size: 14px;
+  padding-top: 10px;
+}
+#login-modal .modal-dialog .aa-register-now a {
+  margin-left: 5px;
+}
