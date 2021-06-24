@@ -180,80 +180,139 @@ header
 /* ************** Categories *********************/
 /* ***********************************************/
 
+
+
 #aa-promo {
-    float: left;
-    display: inline;
-    width: 100%;
-  }
-  #aa-promo .aa-promo-area {
-    display: inline;
-    float: left;
-    padding: 30px 0;
-    width: 100%;
-  }
-  #aa-promo .aa-promo-area .aa-promo-left {
-    display: inline;
-    float: left;
-    width: 100%;
-    height: 400px;
-    overflow: hidden;
-  }
-  #aa-promo .aa-promo-area .aa-promo-left .aa-prom-content {
-    top: 40% !important;
-  }
-  #aa-promo .aa-promo-area .aa-promo-middle {
-    display: inline;
-    float: left;
-    width: 100%;
-    height: 400px;
-    background-color: #ddd;
-  }
-  #aa-promo .aa-promo-area .aa-promo-right {
-    display: inline;
-    float: left;
-    width: 100%;
-    height: 400px;
-  }
-  #aa-promo .aa-promo-area .aa-promo-right .aa-single-promo-right {
-    width: 50%;
-    height: 50%;
-    float: left;
-  }
-  #aa-promo .aa-promo-area .aa-promo-banner {
-    width: 100%;
-    height: 100%;
-    position: relative;
-    overflow: hidden;
-   
-    transform: translateZ(0);
-  }
- 
-  #aa-promo .aa-promo-area .aa-promo-banner:hover img {
-    height: 120%;
-    width: 120%;
-    margin-left: -10%;
-    margin-top: -10%;
-  }
-  
-  #aa-promo .aa-promo-area .aa-promo-banner img {
-    width: 100%;
-    height: 100%;
-    
-  }
-  #aa-promo .aa-promo-area .aa-promo-banner .aa-prom-content {
-    position: absolute;
-    left: 0;
-    top: 35%;
-    right: 0;
-    width: 100%;
-    text-align: center;
-    z-index: 99;
-  }
-  
-  #aa-promo .aa-promo-area .aa-promo-banner .aa-prom-content h4 a {
-    color: #fff !important;
-   
-  }
+  float: left;
+  display: inline;
+  width: 100%;
+}
+#aa-promo .aa-promo-area {
+  display: inline;
+  float: left;
+  padding: 30px 0;
+  width: 100%;
+}
+#aa-promo .aa-promo-area .aa-promo-left {
+  display: inline;
+  float: left;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+}
+#aa-promo .aa-promo-area .aa-promo-left .aa-prom-content {
+  top: 40% !important;
+}
+#aa-promo .aa-promo-area .aa-promo-middle {
+  display: inline;
+  float: left;
+  width: 100%;
+  height: 400px;
+  background-color: #ddd;
+}
+#aa-promo .aa-promo-area .aa-promo-right {
+  display: inline;
+  float: left;
+  width: 100%;
+  height: 400px;
+}
+#aa-promo .aa-promo-area .aa-promo-right .aa-single-promo-right {
+  width: 50%;
+  height: 50%;
+  float: left;
+}
+#aa-promo .aa-promo-area .aa-promo-banner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  -moz-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+}
+#aa-promo .aa-promo-area .aa-promo-banner:before {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 100%;
+  -moz-transform: scale(0);
+  -o-transform: scale(0);
+  -ms-transform: scale(0);
+  -webkit-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+#aa-promo .aa-promo-area .aa-promo-banner:hover img {
+  height: 120%;
+  width: 120%;
+  margin-left: -10%;
+  margin-top: -10%;
+}
+#aa-promo .aa-promo-area .aa-promo-banner:hover:before {
+  -moz-transform: scale(2);
+  -o-transform: scale(2);
+  -ms-transform: scale(2);
+  -webkit-transform: scale(2);
+  transform: scale(2);
+}
+#aa-promo .aa-promo-area .aa-promo-banner img {
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+#aa-promo .aa-promo-area .aa-promo-banner .aa-prom-content {
+  position: absolute;
+  left: 0;
+  top: 35%;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  z-index: 99;
+}
+#aa-promo .aa-promo-area .aa-promo-banner .aa-prom-content span {
+  background-color: #FFF;
+  padding: 5px 10px;  
+}
+#aa-promo .aa-promo-area .aa-promo-banner .aa-prom-content h4 {
+  color: #fff;
+  font-size: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+#aa-promo .aa-promo-area .aa-promo-banner .aa-prom-content h4 a {
+  color: #fff !important;
+  text-decoration: none;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   /* banner */
 #aa-banner {
     display: flex;
@@ -279,7 +338,7 @@ header
 /* ************** Banner *********************/
 /* *******************************************/
 .Banner-After-New-Product{
-    background-image: url(../img/fashion/fashion-header-bg-8.jpg);
+   background-image: linear-gradient(45deg,rgba(113, 121, 145, 0.7) 55%,rgba(8, 31, 98,0.75)) ,url(https://storage.googleapis.com/cdn.nhanh.vn/store/16762/bn/4.jpg);;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -302,7 +361,7 @@ header
 
 #aa-footer {
   background-color: #222;
-  display:inline;
+  display:inline-block;
   float: left;
   width: 100%;
 }
@@ -320,12 +379,16 @@ header
 }
 #aa-footer .aa-footer-top .aa-footer-top-area .aa-footer-widget {
   display: block;
+  
 }
 #aa-footer .aa-footer-top .aa-footer-top-area .aa-footer-widget h3 {
   color: #fff;
+  font-size: 30px;
+ 
 }
 #aa-footer .aa-footer-top .aa-footer-top-area .aa-footer-widget .aa-footer-nav li a {
   color: #888;
+  
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
   -ms-transition: all 0.5s;
@@ -357,10 +420,10 @@ header
   -o-transition: all 0.5s;
   transition: all 0.5s;
 }
-/* #aa-footer .aa-footer-top .aa-footer-top-area .aa-footer-widget .aa-footer-social a:hover {
+#aa-footer .aa-footer-top .aa-footer-top-area .aa-footer-widget .aa-footer-social a:hover {
   color: #fff;
   border-color: #fff;
-} */
+}
 .aa-footer-nav{
  
   font-size: 14px;
