@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="vi-VN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2T-Shop-Acount PAGE</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="Two tables team">
+    <meta name="copyright" content="Two tables team">
+    <!-- > -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,400;0,700;0,900;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="./Resources/css/style.css">
+    <link rel="stylesheet" href="./Resources/css/queries.css">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/b6328132d1.js" crossorigin="anonymous"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+        </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+        </script>
+    <!-- BOOTSTRAP 5-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+</head>
+
+<body>
+    <header id="home">
+        <nav class="navbar navbar-expand-lg bg-transparent navbar-dark" id="navbar">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#home"><img class="logo" id="logo"
+                        src="https://storage.googleapis.com/cdn.nhanh.vn/store/16762/store_1608284412_763.png"
+                        alt="logo"> </a>
+                <button id="nav-button" class="navbar-toggler" onclick="hidText()" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <!-- Nav List -->
+                    <ul class="navbar-nav ms-auto text-center">
+                        <li class="nav-item me-4"><a class="nav-link" href="#home">Home</a></li>
+                        <li class="nav-item me-4 dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Shop
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="#">Men's</a></li>
+                                <li><a class="dropdown-item" href="#">Women's</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item me-4 dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Top
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="#">T-shirt</a></li>
+                                <li><a class="dropdown-item" href="#">Flannel</a></li>
+                                <li><a class="dropdown-item" href="#">Longsleeves</a></li>
+                                <li><a class="dropdown-item" href="#">Sweater</a></li>
+                                <li><a class="dropdown-item" href="#">Hoodie</a></li>
+                                <li><a class="dropdown-item" href="#">Outwear</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item me-4 dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Bottom
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="#">Shorts</a></li>
+                                <li><a class="dropdown-item" href="#">Cargo</a></li>
+                                <li><a class="dropdown-item" href="#">Denim</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item me-4 dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Accessories
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="#">Hats</a></li>
+                                <li><a class="dropdown-item" href="#">BackPacks</a></li>
+                                <li><a class="dropdown-item" href="#">Sock</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item me-4 dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Sale
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="#">Sale 01/01</a></li>
+                                <li><a class="dropdown-divider" href="#"></a></li>
+
+                            </ul>
+                        </li>
+                        <li class="nav-item me-4"><a class="nav-link" href="#"><i class="fas fa-search"></i></a></li>
+                        <li class="nav-item me-4"><a class="nav-link" href="#"> <i class="fa fa-user-circle"></i></a>
+                        </li>
+                        <li class="nav-item me-4"><a class="nav-link" href="#"> <i class="fas fa-shopping-bag"></i></a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+        <div class="load"></div>
+        <div class="content">
+            <div class="heading-main-box d-inline-block" style=" width: 100%; visibility: visible; top:60vh;"
+                id="headerText">
+                <Strong>
+                    <h2>SHOP</h2>
+                </Strong>
+            </div>
+            <button></button>
+        </div>
+
+    </header>
+
+<!-- vật phẩm  -->
+    <div class="wrap">
+       
+        <div class="menu">
+           
+            <div class="mini-menu">
+                <ul>
+            <li class="sub">
+                <a href="#">WOMAN</a>
+                <ul>
+                   <li><a href="#">Jackets</a></li>
+                   <li><a href="#">Blazers</a></li>
+                   <li><a href="#">Suits</a></li>
+                   <li><a href="#">Trousers</a></li>
+                   <li><a href="#">Jenas</a></li>
+                   <li><a href="#">Shirts</a></li> 
+                </ul>
+            </li>
+            <li class="sub">
+                <a href="#">MAN</a>
+                <ul>
+                   <li><a href="#">Jackets</a></li>
+                   <li><a href="#">Blazers</a></li>
+                   <li><a href="#">Suits</a></li>
+                   <li><a href="#">Trousers</a></li>
+                   <li><a href="#">Jenas</a></li>
+                   <li><a href="#">Shirts</a></li> 
+                </ul>
+            </li>
+            <li class="sub">
+                <a href="#">KIDS</a>
+                <ul>
+                    <li><a href="#">Jackets</a></li>
+                   <li><a href="#">Blazers</a></li>
+                   <li><a href="#">Suits</a></li>
+                   <li><a href="#">Trousers</a></li>
+                   <li><a href="#">Jenas</a></li>
+                   <li><a href="#">Shirts</a></li> 
+                </ul>
+            </li>
+            <li class="sub">
+                <a href="#">Shoes&Bags</a>
+                <ul>
+                <li><a href="#">Jackets</a></li>
+                   <li><a href="#">Blazers</a></li>
+                   <li><a href="#">Suits</a></li>
+                   <li><a href="#">Trousers</a></li>
+                   <li><a href="#">Jenas</a></li>
+                   <li><a href="#">Shirts</a></li> 
+                </ul>
+            </li>
+        </ul>
+            </div>
+           
+          
+            <div class="menu-price menu-item">
+                <div class="header-item" >Price</div>
+                <p>
+                    <label for="amount">Price range:</label>
+                    <input type="text" readonly id="amount"  style="border:0; color:#f6931f; font-weight:bold;">
+                </p>
+                <div id="slider-range"></div>
+            </div>
+            
+        </div>
+
+
+
+
+   
+
+
+    <div class="items">
+
+        <div class="items">
+            <div data-price="290" class="item">
+                <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSS8oEITt9vJtsCPRH0mvi2pRf8YZfN6YnkASdjsibLyayVVlidSUwG64QIWw"
+                    alt="jacket" class="img-item"></img>
+                <div class="info">
+                    <h3>Our Legacy Splash Jacquard Knit</h3>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <h5>$290</h5>
+                </div>
+            </div>
+            <div data-price="900" class="item">
+                <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSS8oEITt9vJtsCPRH0mvi2pRf8YZfN6YnkASdjsibLyayVVlidSUwG64QIWw"
+                    alt="jacket" class="img-item"></img>
+                <div class="info">
+                    <h3>Our Legacy Splash Jacquard Knit</h3>
+                    <p class="descroption">Black Grey Plants</p>
+                    <h5>$900</h5>
+                </div>
+            </div>
+            <div data-price="600" class="item">
+                <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSS8oEITt9vJtsCPRH0mvi2pRf8YZfN6YnkASdjsibLyayVVlidSUwG64QIWw"
+                    alt="jacket" class="img-item"></img>
+                <div class="info">
+                    <h3>Our Legacy Splash Jacquard Knit</h3>
+                    <p class="descroption">Black Grey Plants</p>
+                    <h5>$600</h5>
+                </div>
+            </div>
+            <div data-price="457" class="item">
+                <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSS8oEITt9vJtsCPRH0mvi2pRf8YZfN6YnkASdjsibLyayVVlidSUwG64QIWw"
+                    alt="jacket" class="img-item"></img>
+                <div class="info">
+                    <h3>Our Legacy Splash Jacquard Knit</h3>
+                    <p class="descroption">Black Grey Plants</p>
+                    <h5>$457</h5>
+                </div>
+            </div>
+            <div data-price="674" class="item">
+                <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSS8oEITt9vJtsCPRH0mvi2pRf8YZfN6YnkASdjsibLyayVVlidSUwG64QIWw"
+                    alt="jacket" class="img-item"></img>
+                <div class="info">
+                    <h3>Our Legacy Splash Jacquard Knit</h3>
+                    <p class="descroption">Black Grey Plants</p>
+                    <h5>$647</h5>
+                </div>
+            </div>
+            <div data-price="315" class="item">
+                <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSS8oEITt9vJtsCPRH0mvi2pRf8YZfN6YnkASdjsibLyayVVlidSUwG64QIWw"
+                    alt="jacket" class="img-item"></img>
+                <div class="info">
+                    <h3>Our Legacy Splash Jacquard Knit</h3>
+                    <p class="descroption">Black Grey Plants</p>
+                    <h5>$315</h5>
+                </div>
+            </div>
+            <div data-price="987" class="item">
+                <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSS8oEITt9vJtsCPRH0mvi2pRf8YZfN6YnkASdjsibLyayVVlidSUwG64QIWw"
+                    alt="jacket" class="img-item"></img>
+                <div class="info">
+                    <h3>Our Legacy Splash Jacquard Knit</h3>
+                    <p class="descroption">Black Grey Plants</p>
+                    <h5>$987</h5>
+                </div>
+            </div>
+            <div data-price="777" class="item">
+                <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSS8oEITt9vJtsCPRH0mvi2pRf8YZfN6YnkASdjsibLyayVVlidSUwG64QIWw"
+                    alt="jacket" class="img-item"></img>
+                <div class="info">
+                    <h3>Our Legacy Splash Jacquard Knit</h3>
+                    <p class="descroption">Black Grey Plants</p>
+                    <h5>$777</h5>
+                </div>
+            </div>
+            <div data-price="504" class="item">
+                <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSS8oEITt9vJtsCPRH0mvi2pRf8YZfN6YnkASdjsibLyayVVlidSUwG64QIWw"
+                    alt="jacket" class="img-item"></img>
+                <div class="info">
+                    <h3>Our Legacy Splash Jacquard Knit</h3>
+                    <p class="descroption">Black Grey Plants</p>
+                    <h5>$504</h5>
+                </div>
+            </div>
+        </div>
+        <button class="loadmore">Load More</button>
+    </div>
+    </div>
+</body>
+
+
+
+
+<!--<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script> -->
+
+
+
+
+
+<!--Menu-->
+<script type="text/javascript">
+    $(document).ready(function () {
+        $(".sub > a").click(function () {
+            var ul = $(this).next(),
+                clone = ul.clone().css({ "height": "auto" }).appendTo(".mini-menu"),
+                height = ul.css("height") === "0px" ? ul[0].scrollHeight + "px" : "0px";
+            clone.remove();
+            ul.animate({ "height": height });
+            return false;
+        });
+        $('.mini-menu > ul > li > a').click(function () {
+            $('.sub a').removeClass('active');
+            $(this).addClass('active');
+        }),
+            $('.sub ul li a').click(function () {
+                $('.sub ul li a').removeClass('active');
+                $(this).addClass('active');
+            });
+    });
+</script>
+<script src="script.js"></script>
+
+</html>
+<script>
+    $(function () {
+        $("#slider-range").slider({
+            range: true,
+            min: 0,
+            max: 1000,
+            values: [190, 728],
+            slide: function (event, ui) {
+                $("#amount").val("$" + ui.values[0] + " - $" + ui.values[1]);
+                var mi = ui.values[0];
+                var mx = ui.values[1];
+                filterSystem(mi, mx);
+            }
+        });
+        $("#amount").val("$" + $("#slider-range").slider("values", 0) +
+            " - $" + $("#slider-range").slider("values", 1));
+    });
+
+
+    function filterSystem(minPrice, maxPrice) {
+        $(".items div.item").hide().filter(function () {
+            var price = parseInt($(this).data("price"), 10);
+            return price >= minPrice && price <= maxPrice;
+        }).show();
+    }
+
+//   $( "#slider-range" ).on( "slidechange", function( event, ui ) {
+//     console.log(ui.value);
+// } );
+
+</script>
+<script src="./Resources/js/script.js"></script>
+    <!-- BOOTSTRAP 5 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
